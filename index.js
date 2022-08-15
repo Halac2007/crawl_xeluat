@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 
 app.get('/', async (req, res) => {
-  got('https://kynguyenso.plo.vn/')
+  got('https://plo.vn/xe-va-luat/')
     .then((response) => {
       const html = response.body
       const $ = cheerio.load(html)
